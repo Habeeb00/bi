@@ -7,135 +7,111 @@
   <title>Habeeb</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="site-wrap">
 
-    <!-- Nav -->
     <nav class="site-nav">
-      <span class="site-nav-mark">H.</span>
-      <ul class="site-nav-links">
+      <span class="nav-logo">H</span>
+      <ul class="nav-links">
         <li><a href="#work">Work</a></li>
         <li><a href="#now">Now</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <span class="year-badge">© 2026</span>
     </nav>
 
-    <!-- Bento grid -->
     <main class="bento">
 
-      <!-- 1. Hero card — col span 2, row span 2 -->
-      <article class="card card--hero" aria-label="Introduction">
-        <div>
-          <h1 class="name">
-            Habeeb<br /><em>Muhammed</em>
-          </h1>
-          <div class="hero-roles">
-            <span class="hero-role">Storyteller</span>
-            <span class="hero-role">Designer</span>
-            <span class="hero-role">Project builder</span>
-          </div>
+      <!-- Hero — col span 2, row span 2 -->
+      <article class="card card--hero">
+        <div class="hero-top">
+          <div class="hero-chip">Available for projects</div>
         </div>
-        <p class="hero-footer">
-          Making things that matter, with people who care.
-        </p>
+        <div class="hero-body">
+          <h1 class="hero-name">Habeeb<br />Muhammed</h1>
+          <p class="hero-desc">Storyteller. Designer.<br />Project builder.</p>
+        </div>
       </article>
 
-      <!-- 2. Tagline — col span 2 -->
-      <article class="card card--tagline card--warm">
-        <p class="tagline-text">
-          "I believe the best work lives at the edge of craft and intention — where a story earns its ending and a design earns its silence."
-        </p>
+      <!-- Statement — col span 2 -->
+      <article class="card card--statement card--dark-gradient">
+        <p class="statement-text">Making things that matter, with people who care.</p>
+        <span class="statement-label">Principle</span>
       </article>
 
-      <!-- 3. Work section label card -->
-      <article class="card card--work-header">
-        <span class="label">Selected work</span>
-        <p class="card-body" style="font-size:0.8rem; margin-top: 4px;">
-          Projects that started with a real problem and a curious room of people.
-        </p>
+      <!-- Work label card -->
+      <article class="card card--section-label" id="work">
+        <span class="eyebrow">Selected work</span>
+        <p class="section-sub">Projects with real stakes.</p>
       </article>
 
-      <!-- 4. Brand Stories — tall card, row span 2 -->
-      <article class="card card--brand card--accent" id="work">
-        <span class="brand-accent-line"></span>
-        <span class="work-number">01</span>
-        <h2 class="card-title card--title-lg">Brand<br />Stories</h2>
-        <p class="card-body" style="margin-top:12px;">
-          Finding the narrative a brand has been living but never said out loud. Then saying it clearly.
-        </p>
-        <span class="work-tag">Identity &amp; voice</span>
+      <!-- Brand Stories — tall, span 2 rows -->
+      <article class="card card--brand card--purple-gradient">
+        <span class="card-num">01</span>
+        <div class="card-content-bottom">
+          <h2 class="card-heading">Brand<br />Stories</h2>
+          <p class="card-desc">Finding the narrative a brand has been living but never said out loud.</p>
+          <span class="pill">Identity &amp; voice</span>
+        </div>
       </article>
 
-      <!-- 5. Product Design — col span 2 -->
-      <article class="card card--product card--dark">
-        <span class="work-number">02</span>
-        <h2 class="card-title">Product Design</h2>
-        <p class="card-body">
-          Interfaces built around the person using them — not the spec sheet. From concept to shipped.
-        </p>
-        <span class="work-tag">UX · Visual design</span>
+      <!-- Product Design — col span 2 -->
+      <article class="card card--product card--blue-gradient">
+        <span class="card-num">02</span>
+        <div class="card-content-bottom">
+          <h2 class="card-heading">Product Design</h2>
+          <p class="card-desc">Interfaces built around the person using them — not the spec sheet.</p>
+          <span class="pill pill--light">UX · Visual design</span>
+        </div>
       </article>
 
-      <!-- 6. Community Projects -->
-      <article class="card card--community">
-        <span class="work-number">03</span>
-        <h2 class="card-title card-title--sm">Community<br />Projects</h2>
-        <p class="card-body" style="margin-top: 10px;">
-          Spaces and systems that help a group of people do something they couldn't do alone.
-        </p>
+      <!-- Community Projects -->
+      <article class="card card--community card--glass">
+        <span class="card-num card-num--muted">03</span>
+        <h2 class="card-heading card-heading--sm">Community<br />Projects</h2>
+        <p class="card-desc card-desc--sm">Systems that help a group do what they couldn't alone.</p>
       </article>
 
-      <!-- 7. Events & Workshops -->
-      <article class="card card--events card--sage">
-        <span class="work-number">04</span>
-        <h2 class="card-title card-title--sm">Events &amp;<br />Workshops</h2>
-        <p class="card-body" style="margin-top: 10px;">
-          Rooms where things actually happen. From first agenda to last conversation.
-        </p>
+      <!-- Events & Workshops -->
+      <article class="card card--events card--dark">
+        <span class="card-num card-num--dim">04</span>
+        <h2 class="card-heading card-heading--sm">Events &amp;<br />Workshops</h2>
+        <p class="card-desc card-desc--sm card-desc--dim">Rooms where things actually happen.</p>
       </article>
 
-      <!-- 8. Now card — col span 2 -->
+      <!-- Now — col span 2 -->
       <article class="card card--now" id="now">
-        <div class="now-status">
+        <div class="now-badge">
           <span class="now-dot"></span>
           Currently
         </div>
-        <h2 class="card-title">Working on things that matter</h2>
-        <p class="card-body" style="margin-top: 10px;">
-          Right now: building community infrastructure for early-stage founders, writing a piece on how language shapes what gets built, and looking for the next project worth saying yes to.
-        </p>
+        <h2 class="card-heading">Working on things that matter</h2>
+        <p class="card-desc" style="margin-top: 10px;">Building community infrastructure for early-stage founders, writing on how language shapes what gets built, and looking for the next project worth saying yes to.</p>
       </article>
 
-      <!-- 9. Process note — small -->
+      <!-- How I work -->
       <article class="card card--process">
-        <span class="label">How I work</span>
+        <span class="eyebrow">How I work</span>
         <ul class="process-list">
           <li>Listen before designing</li>
           <li>Name the real problem first</li>
           <li>Prototype with words</li>
-          <li>Leave room for the work to surprise you</li>
+          <li>Leave room to be surprised</li>
         </ul>
       </article>
 
-      <!-- 10. Contact card — col span 2, dark -->
+      <!-- Contact — col span 2 -->
       <article class="card card--contact card--dark" id="contact">
-        <span class="label" style="color: rgba(250,248,245,0.45);">Say hello</span>
-        <h2 class="card-title">Let's make<br />something good.</h2>
+        <span class="eyebrow eyebrow--dim">Say hello</span>
+        <h2 class="card-heading card-heading--lg">Let's make something good.</h2>
         <a class="contact-email" href="mailto:habeeb@tinkerhub.org">habeeb@tinkerhub.org</a>
         <div class="contact-links">
-          <a class="contact-link" href="https://twitter.com/" target="_blank" rel="noopener">
-            Twitter / X
-          </a>
-          <a class="contact-link" href="https://linkedin.com/" target="_blank" rel="noopener">
-            LinkedIn
-          </a>
-          <a class="contact-link" href="https://read.cv/" target="_blank" rel="noopener">
-            read.cv
-          </a>
+          <a class="contact-pill" href="#">Twitter</a>
+          <a class="contact-pill" href="#">LinkedIn</a>
+          <a class="contact-pill" href="#">read.cv</a>
         </div>
       </article>
 
