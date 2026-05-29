@@ -5,119 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Habeeb — storyteller, designer, project builder" />
   <title>Habeeb</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="site-wrap">
+  <nav>
+    <span class="nav-mark">H.</span>
+    <div class="nav-right">
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <nav class="site-nav">
-      <span class="nav-logo">H</span>
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#now">Now</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <main class="bento">
+
+    <!-- Hero -->
+    <article class="card hero">
+      <span class="chip">Available for projects</span>
+      <h1>Habeeb<br />Muhammed</h1>
+      <p class="roles">Storyteller &nbsp;·&nbsp; Designer &nbsp;·&nbsp; Project builder</p>
+    </article>
+
+    <!-- Statement — dark -->
+    <article class="card dark statement">
+      <p>"Making things that matter, with people who care."</p>
+    </article>
+
+    <!-- Brand Stories — dark, tall -->
+    <article class="card dark tall" id="work">
+      <span class="num">01</span>
+      <div class="bottom">
+        <h2>Brand<br />Stories</h2>
+        <p>Finding the narrative a brand has been living but never said out loud.</p>
+      </div>
+    </article>
+
+    <!-- Product Design — dark, wide -->
+    <article class="card dark wide">
+      <span class="num">02</span>
+      <div class="bottom">
+        <h2>Product Design</h2>
+        <p>Interfaces built around people — not the spec sheet.</p>
+      </div>
+    </article>
+
+    <!-- Community -->
+    <article class="card light">
+      <span class="num dark-num">03</span>
+      <h2 class="sm">Community<br />Projects</h2>
+      <p class="muted">Systems that help a group do what they couldn't alone.</p>
+    </article>
+
+    <!-- Events -->
+    <article class="card light">
+      <span class="num dark-num">04</span>
+      <h2 class="sm">Events &amp;<br />Workshops</h2>
+      <p class="muted">Rooms where things actually happen.</p>
+    </article>
+
+    <!-- Now — wide -->
+    <article class="card light wide" id="now">
+      <span class="live"><span class="dot"></span>Currently</span>
+      <h2>Working on things that matter</h2>
+      <p class="muted">Building community infrastructure for early-stage founders and writing on how language shapes what gets built.</p>
+    </article>
+
+    <!-- Process -->
+    <article class="card dark">
+      <span class="label">How I work</span>
+      <ul>
+        <li>Listen before designing</li>
+        <li>Name the real problem first</li>
+        <li>Prototype with words</li>
+        <li>Leave room to be surprised</li>
       </ul>
-    </nav>
+    </article>
 
-    <main class="bento">
+    <!-- Contact — dark, wide -->
+    <article class="card dark wide" id="contact">
+      <h2 class="lg">Let's make<br />something good.</h2>
+      <a class="email" href="mailto:habeeb@tinkerhub.org">habeeb@tinkerhub.org</a>
+      <div class="links">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">read.cv</a>
+      </div>
+    </article>
 
-      <!-- Hero — col span 2, row span 2 -->
-      <article class="card card--hero">
-        <div class="hero-top">
-          <div class="hero-chip">Available for projects</div>
-        </div>
-        <div class="hero-body">
-          <h1 class="hero-name">Habeeb<br />Muhammed</h1>
-          <p class="hero-desc">Storyteller. Designer.<br />Project builder.</p>
-        </div>
-      </article>
-
-      <!-- Statement — col span 2 -->
-      <article class="card card--statement card--dark-gradient">
-        <p class="statement-text">Making things that matter, with people who care.</p>
-        <span class="statement-label">Principle</span>
-      </article>
-
-      <!-- Work label card -->
-      <article class="card card--section-label" id="work">
-        <span class="eyebrow">Selected work</span>
-        <p class="section-sub">Projects with real stakes.</p>
-      </article>
-
-      <!-- Brand Stories — tall, span 2 rows -->
-      <article class="card card--brand card--purple-gradient">
-        <span class="card-num">01</span>
-        <div class="card-content-bottom">
-          <h2 class="card-heading">Brand<br />Stories</h2>
-          <p class="card-desc">Finding the narrative a brand has been living but never said out loud.</p>
-          <span class="pill">Identity &amp; voice</span>
-        </div>
-      </article>
-
-      <!-- Product Design — col span 2 -->
-      <article class="card card--product card--blue-gradient">
-        <span class="card-num">02</span>
-        <div class="card-content-bottom">
-          <h2 class="card-heading">Product Design</h2>
-          <p class="card-desc">Interfaces built around the person using them — not the spec sheet.</p>
-          <span class="pill pill--light">UX · Visual design</span>
-        </div>
-      </article>
-
-      <!-- Community Projects -->
-      <article class="card card--community card--glass">
-        <span class="card-num card-num--muted">03</span>
-        <h2 class="card-heading card-heading--sm">Community<br />Projects</h2>
-        <p class="card-desc card-desc--sm">Systems that help a group do what they couldn't alone.</p>
-      </article>
-
-      <!-- Events & Workshops -->
-      <article class="card card--events card--dark">
-        <span class="card-num card-num--dim">04</span>
-        <h2 class="card-heading card-heading--sm">Events &amp;<br />Workshops</h2>
-        <p class="card-desc card-desc--sm card-desc--dim">Rooms where things actually happen.</p>
-      </article>
-
-      <!-- Now — col span 2 -->
-      <article class="card card--now" id="now">
-        <div class="now-badge">
-          <span class="now-dot"></span>
-          Currently
-        </div>
-        <h2 class="card-heading">Working on things that matter</h2>
-        <p class="card-desc" style="margin-top: 10px;">Building community infrastructure for early-stage founders, writing on how language shapes what gets built, and looking for the next project worth saying yes to.</p>
-      </article>
-
-      <!-- How I work -->
-      <article class="card card--process">
-        <span class="eyebrow">How I work</span>
-        <ul class="process-list">
-          <li>Listen before designing</li>
-          <li>Name the real problem first</li>
-          <li>Prototype with words</li>
-          <li>Leave room to be surprised</li>
-        </ul>
-      </article>
-
-      <!-- Contact — col span 2 -->
-      <article class="card card--contact card--dark" id="contact">
-        <span class="eyebrow eyebrow--dim">Say hello</span>
-        <h2 class="card-heading card-heading--lg">Let's make something good.</h2>
-        <a class="contact-email" href="mailto:habeeb@tinkerhub.org">habeeb@tinkerhub.org</a>
-        <div class="contact-links">
-          <a class="contact-pill" href="#">Twitter</a>
-          <a class="contact-pill" href="#">LinkedIn</a>
-          <a class="contact-pill" href="#">read.cv</a>
-        </div>
-      </article>
-
-    </main>
-
-  </div>
+  </main>
 
 </body>
 </html>
